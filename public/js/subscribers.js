@@ -39,3 +39,10 @@ app.controller('con', ['$scope', '$http', function($scope, $http){
 		}
 
 	}]);
+
+
+"<div ng-show="sub_show_me" class="message is-success">
+  <div class="message-body">
+    <p>Congratulations, you have subscribed to our newsletter list.</p>
+  </div>
+</div>"
