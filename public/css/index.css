@@ -102,7 +102,7 @@ form h2 {
 	color: #fff !important;
 }
 
-#subscribe #correct input[type="text"]{
+#subscribe #correct input[type="email"]{
 	max-width: 400px;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
