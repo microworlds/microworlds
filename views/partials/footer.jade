@@ -3,16 +3,19 @@ section#subscribe
 	.row.center-xs
 		.col-xs-12
 			#correct
-				form
+				form(ng-submit="sending()" novalidate="false" ng-controller="sub")
+					.message.is-success.catch(ng-show="sub_show_me")
+						.message-body
+							p Congratulations, you have subscribed to our newsletter list.
 					h2.title Subscribe to receive updates
-					input.input(type="text" placeholder="Enter email here") 
+					input.input(ng-model="subscriber.email" type="text" placeholder="Enter email here") 
 					button.button.is-primary.sub Subscribe
 //- FOOTER SECTION
 footer#footer
 	.container
 		#wrong
 			.row.center-xs
-				.col-xs-12.col-sm-4.col-md-4.not-center
+				.col-xs-12.col-sm-3.col-md-3.not-center
 					h1 Contact 
 					br
 					div
@@ -24,25 +27,33 @@ footer#footer
 					div
 						i.fa.fa-map
 						span &nbsp Bingham University Karu
-				.col-xs-12.col-sm-4.col-md-4.not-center
+				.col-xs-12.col-sm-3.col-md-3.not-center
 					h1 Brief Info 
 					br
 					p.
-						Microworlds is a web design and web development company. We make websites and web applications for personal and enterprises as well at affordable and negotiable price. 
-				.col-xs-12.col-sm-4.col-md-4.not-center
+						Microworlds is a web design and web development company. 
+				.col-xs-12.col-sm-3.col-md-3.not-center
+					h1 Developer 
+					br
+					p Caleb David 
+					br
+					img(src="/img/dev.jpg")
+				.col-xs-12.col-sm-3.col-md-3.not-center
 					h1 Social
 					br
 					div
 						i.fa.fa-facebook
-						a(href="#0") &nbsp Facebook
+						a(href="https://www.facebook.com/micronetworld") &nbsp Facebook
 					div
 						i.fa.fa-linkedin
-						a(href="#0") &nbsp LinkedIn 
-					div
-						i.fa.fa-google-plus
-						a(href="#0") &nbsp Google Plus 
+						a(href="https://www.linkedin.com/in/caleb-david-923108143") &nbsp LinkedIn 
+
+
 section#copyright
 	.container
 			.row.center-xs
 				.col-xs-12.col-sm-12.col-md-12
 					p Copyright &copy 2017
+
+script(src="/js/angular.min.js") 
+script(src="/js/subscribers.js")
