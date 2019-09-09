@@ -18,7 +18,7 @@
     "nodemailer": "^3.0.2",
     "serve-favicon": "~2.3.2"
   },
-   "engines": {
+  "engines": {
     "node": "8.1.4"
   }
 }
